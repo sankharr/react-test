@@ -3,7 +3,7 @@ import "./App.css";
 // import ComponentA from './components/ComponentA';
 import loadable from "@loadable/component";
 
-const ComponentA = loadable(() => import("./components/ComponentA"), { ssr: true });
+const ComponentA = loadable(() => import("./components/ComponentA"));
 
 function App() {
   const [state, setState] = useState(false);
